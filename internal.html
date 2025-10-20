@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar CSS Internal</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            color: black;
+            margin: 25px;
+        }
+
+        h2 {
+            background-color: lightgray;
+            padding: 5px;
+        }
+
+        hr {
+            margin: 25px 0;
+        }
+
+        .hasil {
+            background-color: #f2f2f2;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        p {
+            text-align: center;
+            color: red;
+        }
+
+        #para1 {
+            text-align: center;
+            color: blue;
+        }
+
+        .center {
+            text-align: center;
+            color: green;
+        }
+
+        p.center {
+            text-align: center;
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>3.1 Praktik CSS - Gaya Internal</h1>
+
+    <h2>1. Mengatur dengan Selektor Elemen</h2>
+    <div class="hasil">
+        <p>Semua paragraf ini terkena efek dari style elemen.</p>
+        <p>Saya juga ikut!</p>
+        <p>Termasuk saya!</p>
+    </div>
+
+    <hr>
+
+    <h2>2. Menggunakan Selektor ID</h2>
+    <div class="hasil">
+        <p id="para1">Halo Dunia!</p>
+        <p>Paragraf ini tidak terpengaruh oleh ID tersebut.</p>
+    </div>
+
+    <hr>
+
+    <h2>3. Selektor Kelas (Class Selector)</h2>
+    <div class="hasil">
+        <h1 class="center">Judul ini berwarna hijau dan di tengah</h1>
+        <p class="center">Paragraf ini juga hijau dan rata tengah.</p>
+    </div>
+
+    <hr>
+
+    <h2>4. Kelas untuk Elemen Tertentu</h2>
+    <div class="hasil">
+        <h1 class="center">Judul ini tetap hijau seperti biasa</h1>
+        <p class="center">Tapi paragraf ini tampil ungu dan di tengah.</p>
+    </div>
+
+</body>
+</html>
